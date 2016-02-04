@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>zap2xml</Name>
+  <Description>zap2xml is a small and fast command line script that connects to a Zap2it or TVGuide account, downloads the tv listings data, and converts it to XMLTV or XTVD formatted .xml.&#13;
+[br][br][b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#13;
+[b]/config[/b] : Folder where all zap2xml config files, config templates and download cache [br]&#13;
+[b]/downloads[/b] : Folder where the guide.xml file will be written [br]&#13;
+  <Registry>https://registry.hub.docker.com/u/johnodon/zap2xml/</Registry>
+  <Repository>johnodon/zap2xml</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>Bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/zap2xml/</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/tvheadend/data/</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version>86d6d5d5</Version>
+  <WebUI></WebUI>
+  <Banner>http://i.imgur.com/101zI3q.png</Banner>
+  <Icon>http://i.imgur.com/pNpldM8.png</Icon>
+  <ExtraParams></ExtraParams>
+</Container>
