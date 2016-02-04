@@ -23,7 +23,7 @@
 [br][b]outfile=[span style='color: #E80000;']/data/guide2.xml[/span][/b]-------- DO NOT CHANGE (usually same folder specified in THV container)[br]
 [br]Once you have made your configuration changes, you can restart the container.  On the next (and each subsequent) launch, zap2xml will scrape zap2it.com for guide data for both lineups and the resulting XMLs will be merged into a single XML @ /data/guide.xml.</Description>
   <Registry>https://registry.hub.docker.com/u/johnodon/zap2xml/</Registry>
-  <Repository>johnodon/zap2xml</Repository>
+  <Repository>johnodon/zap2xml-2lineups</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
