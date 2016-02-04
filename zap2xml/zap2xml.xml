@@ -4,7 +4,7 @@
   <Description>zap2xml is a small and fast command line script that connects to a Zap2it or TVGuide account, downloads the tv listings data, and converts it to XMLTV or XTVD formatted .xml.&#13;
 [br][br][b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#13;
 [b]/config[/b] : Folder where all zap2xml config files, config templates and download cache [br]&#13;
-[b]/downloads[/b] : Folder where the guide.xml file will be written [br]&#13;
+[b]/downloads[/b] : Folder where the guide.xml file will be written [br]&#13;</Description>
   <Registry>https://registry.hub.docker.com/u/johnodon/zap2xml/</Registry>
   <Repository>johnodon/zap2xml</Repository>
   <BindTime>true</BindTime>
