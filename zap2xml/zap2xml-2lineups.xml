@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <Name>zap2xml-2lineups</Name>
-  <Description>zap2xml is a small and fast command line script that connects to a Zap2it or TVGuide account, downloads the tv listings data, and converts it to XMLTV or XTVD formatted .xml.&#13;
+  <Name>zap2xml</Name>
+  <Description>[b][span style='color: #E80000;']NOTE: THIS CONTAINER IS FOR USERS WHO PULL DATA FROM 2 DIFFERENT LINEUPS ON ZAP2IT.COM.[/b][/span][br]
+[br]zap2xml is a small and fast command line script that connects to a Zap2it or TVGuide account, downloads the tv listings data, and converts it to XMLTV or XTVD formatted .xml.&#13;
 [br][br][b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#13;
 [b]/config[/b] : Folder where all zap2xml config files, config templates and download cache [br]&#13;
 [b]/downloads[/b] : Folder where the guide.xml file will be written [br]&#13;
+[br]On first launch, zap2xml will not scrape guide data.  Two configuration templates will be downloaded to [b]/config/templates/zap2xml.conf1.template[/b] and [b]/config/templates/zap2xml.conf2.template[/b].  Copy/rename these file to [b]/config/zap2xml.conf1[/b] and [b]/config/zap2xml.conf2[/b] respectively and edit per your needs:[br]&#13;
+[br][b][u]zap2xml.conf1[/b][/u]
+[br][b]user=[span style='color: #E80000;']*zap2it.com_username*[/span][/b]-------- change to you zap2it username
+[br][b]pass=[span style='color: #E80000;']*zap2it.com_password*[/span][/b]-------- change to you zap2it username
+[br][b]cache=[span style='color: #E80000;']/config/cache1[/span][/b]-------- zap2xml cache1 folder
+[br][b]days=[span style='color: #E80000;']14[/span][/b]-------- # of days of guide data to download
+[br][b]outformat=[span style='color: #E80000;']xmltv[/span][/b]-------- XML format
+[br][b]outfile=[span style='color: #E80000;']/data/guide1.xml[/span][/b]-------- DO NOT CHANGE (usually same folder specified in THV container)[br]
+[br][b][u]zap2xml.conf2[/b][/u]
+[br][b]user=[span style='color: #E80000;']*zap2it.com_username*[/span][/b]-------- change to you zap2it username
+[br][b]pass=[span style='color: #E80000;']*zap2it.com_password*[/span][/b]-------- change to you zap2it username
+[br][b]cache=[span style='color: #E80000;']/config/cache2[/span][/b]-------- zap2xml cache2 folder
+[br][b]days=[span style='color: #E80000;']14[/span][/b]-------- # of days of guide data to download
+[br][b]outformat=[span style='color: #E80000;']xmltv[/span][/b]-------- XML format
+[br][b]outfile=[span style='color: #E80000;']/data/guide2.xml[/span][/b]-------- DO NOT CHANGE (usually same folder specified in THV container)[br]
+[br]Once you have made your configuration changes, you can restart the container.  On the next (and each subsequent) launch, zap2xml will scrape zap2it.com for guide data for both lineups and the resulting XMLs will be merged into a single XML @ /data/guide.xml.</Description>
   <Registry>https://registry.hub.docker.com/u/johnodon/zap2xml/</Registry>
-  <Repository>johnodon/zap2xml-2lineups</Repository>
+  <Repository>johnodon/zap2xml</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
@@ -29,7 +46,7 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Version>86d6d5d6</Version>
+  <Version>86d6d5d5</Version>
   <WebUI></WebUI>
   <Banner>http://i.imgur.com/101zI3q.png</Banner>
   <Icon>http://i.imgur.com/pNpldM8.png</Icon>
