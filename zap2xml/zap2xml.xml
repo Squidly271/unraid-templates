@@ -5,6 +5,7 @@
 [br][br][b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#13;
 [b]/config[/b] : Folder where all zap2xml config files, config templates and download cache [br]&#13;
 [b]/downloads[/b] : Folder where the guide.xml file will be written [br]&#13;
+[br]You need to create and configure your account on zap2it.com.  Follow the instructions at the top of the zap2xml website:  http://zap2xml.awardspace.info/[br]
 [br]On first launch, zap2xml will not scrape guide data.  A configuration template will be downloaded to [b]/config/templates/zap2xml.conf.template[/b].  Copy/rename this file to [b]/config/zap2xml.conf[/b] and edit per your needs:[br]&#13;
 [br][b]user=[span style='color: #E80000;']*zap2it.com_username*[/span][/b]-------- change to your zap2it username
 [br][b]pass=[span style='color: #E80000;']*zap2it.com_password*[/span][/b]-------- change to your zap2it username
