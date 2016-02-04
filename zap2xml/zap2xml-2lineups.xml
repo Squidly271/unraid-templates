@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>zap2xml-2lineups</Name>
+  <Description>zap2xml perl script for 2 lineups</Description>
+  <Registry>https://hub.docker.com/u/johnodon/zap2xml-2lineups</Registry>
+  <Repository>johnodon/zap2xml-2lineups</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/Docker/tvheadend/data/</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/Docker/zap2xml/</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version>7d85eaee</Version>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>http://i.imgur.com/pNpldM8.png</Icon>
+  <ExtraParams></ExtraParams>
+</Container>
